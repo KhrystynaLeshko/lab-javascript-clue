@@ -166,13 +166,14 @@ function pickMystery() {
   };
   return mystery;
 }
+
 pickMystery();
 
 // ITERATION 3
 
-function revealMystery() {
-  let revealed = pickMystery();
-  return `${revealed.suspect.firstname} ${revealed.suspect.lastname} killed Mr. Boddy using the ${revealed.weapon.name} in the ${revealed.room.name}!`;
+function revealMystery(revealed) {
+  // let revealed = pickMystery();
+  return `${revealed.suspect.firstName} ${revealed.suspect.lastName} killed Mr. Boddy using the ${revealed.weapon.name} in the ${revealed.room.name}!`;
 }
 
 revealMystery();
